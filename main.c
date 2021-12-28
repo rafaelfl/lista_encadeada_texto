@@ -34,20 +34,26 @@ int main(void) {
     printf("A posição 5 não existe na lista!\n");
   }
 
-  // pos_encontrada = buscar_lista(lt, "Matrix ressurections");
-  // printf("Posição encontrada: %d\n", pos_encontrada);
+  pos_encontrada = buscar_lista(lt, "Matrix Ressurections");
+  printf("Posição encontrada: %d\n", pos_encontrada);
 
-  // pos_encontrada = buscar_lista(lt, "Carro");
-  // printf("Posição encontrada: %d\n", pos_encontrada);
+  pos_encontrada = buscar_lista(lt, "Carro");
+  printf("Posição encontrada: %d\n", pos_encontrada);
 
-  // remover_lista(lt, 0);
-  // imprimir_lista(lt);
+  inserir_lista(lt, 0, "Matrix 5 virá?");
+  imprimir_lista(lt);
 
-  // remover_lista(lt, 2);
-  // imprimir_lista(lt);
+  inserir_lista(lt, 3, "Qual o proximo lançamento?");
+  imprimir_lista(lt);
 
-  // remover_lista(lt, 5);
-  // imprimir_lista(lt);
+  remover_lista(lt, 0);
+  imprimir_lista(lt);
+
+  remover_lista(lt, 2);
+  imprimir_lista(lt);
+
+  remover_lista(lt, 5);
+  imprimir_lista(lt);
 
   destroi_lista(lt);
   
